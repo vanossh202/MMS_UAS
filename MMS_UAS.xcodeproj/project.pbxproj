@@ -102,8 +102,8 @@
 				31BE4E9425D8FC3200446E38 /* SceneDelegate.swift */,
 				31BE4E9825D8FC3200446E38 /* Main.storyboard */,
 				31BE4E9E25D8FC3300446E38 /* Assets.xcassets */,
-				31BE4EA025D8FC3300446E38 /* LaunchScreen.storyboard */,
 				313CDB7225DAB563008A806A /* MMS_UAS.xcdatamodeld */,
+				31BE4EA025D8FC3300446E38 /* LaunchScreen.storyboard */,
 				31BE4EA325D8FC3300446E38 /* Info.plist */,
 			);
 			path = MMS_UAS;
