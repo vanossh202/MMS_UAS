@@ -11,6 +11,9 @@
 		313CDB6025DA88FA008A806A /* RandomizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313CDB5F25DA88FA008A806A /* RandomizerViewController.swift */; };
 		313CDB6525DAA2BF008A806A /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313CDB6425DAA2BF008A806A /* BookmarkViewController.swift */; };
 		313CDB7425DAB563008A806A /* MMS_UAS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 313CDB7225DAB563008A806A /* MMS_UAS.xcdatamodeld */; };
+		3174617225DBB59400AA98B4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174617125DBB59400AA98B4 /* Result.swift */; };
+		3174617525DBB61900AA98B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174617425DBB61900AA98B4 /* Extensions.swift */; };
+		3174617925DBFACD00AA98B4 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174617825DBFACD00AA98B4 /* BookmarkTableViewCell.swift */; };
 		31BE4E9325D8FC3200446E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE4E9225D8FC3200446E38 /* AppDelegate.swift */; };
 		31BE4E9525D8FC3200446E38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE4E9425D8FC3200446E38 /* SceneDelegate.swift */; };
 		31BE4E9725D8FC3200446E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE4E9625D8FC3200446E38 /* ViewController.swift */; };
@@ -26,6 +29,9 @@
 		313CDB5F25DA88FA008A806A /* RandomizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerViewController.swift; sourceTree = "<group>"; };
 		313CDB6425DAA2BF008A806A /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		313CDB7325DAB563008A806A /* MMS_UAS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MMS_UAS.xcdatamodel; sourceTree = "<group>"; };
+		3174617125DBB59400AA98B4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		3174617425DBB61900AA98B4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3174617825DBFACD00AA98B4 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 		31BE4E8F25D8FC3200446E38 /* MMS_UAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMS_UAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BE4E9225D8FC3200446E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31BE4E9425D8FC3200446E38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				313CDB6425DAA2BF008A806A /* BookmarkViewController.swift */,
+				3174617825DBFACD00AA98B4 /* BookmarkTableViewCell.swift */,
 			);
 			path = Bookmark;
 			sourceTree = "<group>";
@@ -95,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				31BE4EB525D941CC00446E38 /* MainResult.swift */,
+				3174617125DBB59400AA98B4 /* Result.swift */,
+				3174617425DBB61900AA98B4 /* Extensions.swift */,
 				313CDB5725DA83C3008A806A /* Dictionary */,
 				313CDB5825DA83F4008A806A /* Randomizer */,
 				313CDB5925DA83FA008A806A /* Bookmark */,
@@ -102,8 +111,8 @@
 				31BE4E9425D8FC3200446E38 /* SceneDelegate.swift */,
 				31BE4E9825D8FC3200446E38 /* Main.storyboard */,
 				31BE4E9E25D8FC3300446E38 /* Assets.xcassets */,
-				31BE4EA025D8FC3300446E38 /* LaunchScreen.storyboard */,
 				313CDB7225DAB563008A806A /* MMS_UAS.xcdatamodeld */,
+				31BE4EA025D8FC3300446E38 /* LaunchScreen.storyboard */,
 				31BE4EA325D8FC3300446E38 /* Info.plist */,
 			);
 			path = MMS_UAS;
@@ -185,9 +194,12 @@
 				31BE4E9325D8FC3200446E38 /* AppDelegate.swift in Sources */,
 				313CDB6025DA88FA008A806A /* RandomizerViewController.swift in Sources */,
 				313CDB5C25DA84B2008A806A /* RandomizerViewCell.swift in Sources */,
+				3174617225DBB59400AA98B4 /* Result.swift in Sources */,
 				313CDB6525DAA2BF008A806A /* BookmarkViewController.swift in Sources */,
 				31BE4E9525D8FC3200446E38 /* SceneDelegate.swift in Sources */,
+				3174617525DBB61900AA98B4 /* Extensions.swift in Sources */,
 				313CDB7425DAB563008A806A /* MMS_UAS.xcdatamodeld in Sources */,
+				3174617925DBFACD00AA98B4 /* BookmarkTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
