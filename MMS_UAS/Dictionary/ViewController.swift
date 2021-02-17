@@ -138,7 +138,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let result = arrResult[indexPath.section].definitions[indexPath.row]
         
-            cell.picture.getImage(url: result.image_url!)
+            cell.cellPicture.getImage(url: result.image_url!)
             cell.cellType.text = result.type
             cell.cellDefinition.text = result.definition
             

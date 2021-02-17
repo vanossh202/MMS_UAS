@@ -10,21 +10,21 @@ import UIKit
 
 extension UIImageView{
     func getImage(url : String){
-        self.image = UIImage(named: "Default")
-        
-        if url == ""{
-            return
+                if url == ""{
+                    self.image = UIImage(named: "Default")
+                    return
+                }else {
+                    let inputURL = URL(string: url)!
+            DispatchQueue.global().async {
+                [weak self] in
+                if let data = try? Data(contentsOf: inputURL){
+                    if let image = UIImage(data: data) {
+                        DispatchQueue.main.async {
+                            self?.image = image
+                        }
+                    }
+                }
+            }
         }
-        
-        let imgURL = URL(string: url)
-        URLSession.shared.dataTask(with: imgURL!) { (data, response, error) in
-            if error != nil{
-                return
-            }
-            
-            DispatchQueue.main.async {
-               self.image = UIImage(data: data!)
-            }
-        }.resume()
     }
 }
