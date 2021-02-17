@@ -113,6 +113,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             alertDialog.addAction(closeAction)
             present(alertDialog, animated: true, completion: nil)
         }
+        
+        let alertDialog = UIAlertController(title: "Success", message: "Word saved to Bookmark succesfully", preferredStyle: .alert)
+        let close = UIAlertAction(title: "Close", style: .default, handler: nil)
+        alertDialog.addAction(close)
+        present(alertDialog, animated: true, completion: nil)
     }
     
     //TABLE SETTING

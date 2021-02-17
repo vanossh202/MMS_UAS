@@ -24,10 +24,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-pi-7cf">
-                                <rect key="frame" x="356" y="54" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-pi-7cf">
+                                <rect key="frame" x="356" y="54" width="48" height="34"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <state key="normal" title="Search"/>
+                                <state key="normal" title="Search" image="magnifyingglass" catalog="system"/>
                                 <connections>
                                     <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PR6-5Q-6Jb"/>
                                 </connections>
@@ -92,6 +92,7 @@
                             <constraint firstItem="Rdi-Am-V0x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5e5-Bv-ggc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vF5-pi-7cf" secondAttribute="trailing" constant="10" id="HZh-qV-W3R"/>
                             <constraint firstItem="vF5-pi-7cf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Ls2-4p-oDp"/>
+                            <constraint firstItem="Rdi-Am-V0x" firstAttribute="top" secondItem="vF5-pi-7cf" secondAttribute="bottom" constant="10" id="Ujp-cf-sA0"/>
                             <constraint firstItem="vF5-pi-7cf" firstAttribute="leading" secondItem="9b3-8c-UGi" secondAttribute="trailing" constant="8" symbolic="YES" id="bJ8-Ae-QS0"/>
                             <constraint firstItem="Rdi-Am-V0x" firstAttribute="top" secondItem="9b3-8c-UGi" secondAttribute="bottom" constant="10" id="cqF-Tf-oxv"/>
                             <constraint firstItem="9b3-8c-UGi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fEe-ka-nea"/>
@@ -100,7 +101,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rdi-Am-V0x" secondAttribute="bottom" id="lrL-6a-OMw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dictionary" id="mqY-o7-1Zp"/>
+                    <tabBarItem key="tabBarItem" title="Dictionary" image="book.fill" catalog="system" selectedImage="book.fill" id="mqY-o7-1Zp"/>
                     <connections>
                         <outlet property="searchBar" destination="9b3-8c-UGi" id="1Wu-Lz-tVe"/>
                         <outlet property="table" destination="Rdi-Am-V0x" id="bcX-du-4VQ"/>
@@ -202,7 +203,7 @@
                             <constraint firstItem="Kgg-Uq-fBa" firstAttribute="top" secondItem="Vfh-LI-pYD" secondAttribute="top" constant="10" id="sPC-48-zza"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Randomizer" id="BJS-qA-TaY"/>
+                    <tabBarItem key="tabBarItem" title="Randomizer" image="shuffle" catalog="system" selectedImage="shuffle" id="BJS-qA-TaY"/>
                     <connections>
                         <outlet property="RandoTable" destination="hMD-qs-PL0" id="JmQ-QG-yfy"/>
                         <outlet property="choosenBar" destination="LhA-MM-8qd" id="Jbg-v7-wgy"/>
@@ -279,7 +280,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H8F-fC-Ok2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="H8F-fC-Ok2" firstAttribute="trailing" secondItem="cNX-tY-0Cp" secondAttribute="trailing" id="CWd-Y4-3Vn"/>
                             <constraint firstItem="H8F-fC-Ok2" firstAttribute="bottom" secondItem="cNX-tY-0Cp" secondAttribute="bottom" id="Hko-wQ-w6c"/>
@@ -287,7 +288,7 @@
                             <constraint firstItem="cNX-tY-0Cp" firstAttribute="top" secondItem="H8F-fC-Ok2" secondAttribute="top" id="pgg-DD-CrE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bookmark" id="CSO-L1-Nc8"/>
+                    <tabBarItem key="tabBarItem" title="Bookmark" image="bookmark" catalog="system" selectedImage="bookmark" id="CSO-L1-Nc8"/>
                     <connections>
                         <outlet property="bookmarkTable" destination="cNX-tY-0Cp" id="GNx-CS-9O1"/>
                     </connections>
@@ -318,6 +319,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="shuffle" catalog="system" width="128" height="93"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

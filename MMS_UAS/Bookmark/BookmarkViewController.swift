@@ -106,7 +106,8 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
                 alertDialog.addAction(closeAction)
                 present(alertDialog, animated: true, completion: nil)
             }
-        bookmarkTable.reloadData()
+        arrBookmark.removeAll()
+        loadData()
     }
     
     @objc func confirmation(sender: UIButton) {
